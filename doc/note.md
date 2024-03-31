@@ -107,3 +107,6 @@ set global validate_password_length=6;
 set password = password("123456");
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
 flush privileges;
+
+--------------------------------------------------------------------------
+8090
