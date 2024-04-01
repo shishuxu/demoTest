@@ -32,6 +32,7 @@ public class HelloWordController {
     @GetMapping(value = "/testAop")
     public Object testAop(){
         System.out.println("testAop");
+
 //        helloWorldService.testAop();
         return "testAop";
     }

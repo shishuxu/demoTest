@@ -110,3 +110,7 @@ flush privileges;
 
 --------------------------------------------------------------------------
 8090
+D:\java\apache-maven-3.9.4\conf\settings.xml
+
+clean install -X -Dmaven.test.skip=true -Dmaven.repo.local=D:\java\repository
+
