@@ -8,6 +8,10 @@ spring:
     password: 123456
     oracleucp:
       port-number: 3306
+  thymeleaf:
+    prefix: classpath:/templates/pages/
+    suffix: .html
+
 
   thymeleaf:
     prefix: classpath:/templates/pages/
