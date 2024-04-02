@@ -67,7 +67,7 @@ public class HelloWorldService {
         }
     }
 
-    // 验证 mybatis的批处理
+    // 验证 jdbc的批处理 ---------------------------------------------------------------------
     public static void generalInsert() throws ClassNotFoundException, SQLException {
         long start = System.currentTimeMillis();
         Class.forName("com.mysql.jdbc.Driver");
