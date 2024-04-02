@@ -36,4 +36,14 @@ public class HelloWordController {
 //        helloWorldService.testAop();
         return "testAop";
     }
+
+    /**
+     * 验证mybatis的批处理
+     * @return 、、
+     */
+    @GetMapping(value = "/testJenkins")
+    public Object test(){
+        System.out.println("testJenkins");
+        return "testJenkins";
+    }
 }
