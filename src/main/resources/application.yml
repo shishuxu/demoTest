@@ -9,6 +9,10 @@ spring:
     password: 123456
     oracleucp:
       port-number: 3306
+  thymeleaf:
+    prefix: classpath:/templates/pages/
+    suffix: .html
+
 
 mybatis:
   mapper-locations: classpath:com/xss/test/mapper/*.xml
@@ -17,13 +21,3 @@ mybatis:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-# 如果你使用了Mapper接口，并且想要通过包扫描来自动注册Mapper
-#mybatis-plus: # 如果你使用的是MyBatis-Plus，可能需要这个配置
-#  mapper-locations: classpath:/mapper/*Mapper.xml
-#  type-aliases-package: com.xss.test
-#  global-config:
-#    db-config:
-#      id-type: auto # 主键类型
-#      table-prefix: t_ # 表前缀
-#  configuration:
-#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 日志实现
