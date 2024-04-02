@@ -43,7 +43,7 @@ public class AopTest {
         System.out.println("在请求之后");
     }
 
-    @AfterReturning("execution(* com.xss.test.controller..*(..))")
+    @AfterReturning("execution(* com.xss.test.services..*(..))")
     public void AfterReturning() {
         System.out.println("在返回之后");
     }
