@@ -64,13 +64,15 @@ mybatis原理解析-------------
 jdbc原理
 加载驱动==》获取数据库连接==》sql执行器==》获取结果接
 
-mybatis原理
-先封装sql===》调用jdbc操作数据库===》数据库返回的结果封装成java对象
+mybatis原理（先封装sql===》调用jdbc操作数据库===》数据库返回的结果封装成java对象）
+ 
+1、应用启动后会加载全局配置及xml映射文件到configuration对象中==》
+2、configuration会和 SqlSessionFactory做绑定==》
+3、当用户请求来时，会通过SqlSessionFactory获取SqlSession对象==》
+4、在通过SqlSession的api方法调用对应的方法
 
-1、mybatis的初始化操作；
-
-2、处理sql请求的过程；
-
+处理sql请求的过程；
+SqlSessionFactory=》SqlSession=》Executor=》（ParameterHandler，StatementHandler，ResultSetHandler)=====>DB
 
 
 

@@ -14,11 +14,12 @@ spring:
 
 
 
+# mybatis-spring-boot-starter  当使用的依赖是springboot包时，不需要此类配置
 
-mybatis:
-  mapper-locations: classpath:com/xss/test/mapper/*.xml
-  type-aliases-package: com.xss.test
-  configuration:
-    map-underscore-to-camel-case: true
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis:
+#  mapper-locations: classpath:com/xss/test/mapper/*.xml
+#  type-aliases-package: com.xss.test
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 

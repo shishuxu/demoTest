@@ -59,6 +59,9 @@ public class HelloWorldService {
             }
             for (TestName user : list) {
                 mapper.insert(user);
+                //调用方式二：直接使用 SqlSession的api
+//                session.insert("com.xss.test.mapper.insert",user);
+
             }
             // 提交事务，执行批量插入
             session.commit();
