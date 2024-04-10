@@ -36,14 +36,14 @@ public class HelloWordController {
         System.out.println("testAop");
 
 //        helloWorldService.testAop();
-        return "testAop";
+        return "testAop----";
     }
 
     /**
      * 验证mybatis的批处理
      * @return 、、
      */
-    @GetMapping(value = "/testJenkins")
+    @GetMapping(value = "testJenkins")
     public Object test(){
         System.out.println("testJenkins");
         return "testJenkins";
