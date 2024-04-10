@@ -1,20 +1,20 @@
-server:
-  port: 8089
-
-spring:
-  application:
-    name: demoTest
-  config:
-    activate:
-      on-profile: shardingTable
-  thymeleaf:
-    prefix: classpath:/templates/pages/
-    suffix: .html
-
-
-mybatis:
-  mapper-locations: classpath:com/xss/test/mapper/*.xml
-  type-aliases-package: com.xss.test.mapper
-  configuration:
-    map-underscore-to-camel-case: true
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#server:
+#  port: 8089
+#
+#spring:
+#  application:
+#    name: demoTest
+#  config:
+#    activate:
+#      on-profile: shardingTable
+#  thymeleaf:
+#    prefix: classpath:/templates/pages/
+#    suffix: .html
+#
+#
+#mybatis:
+#  mapper-locations: classpath:com/xss/test/mapper/*.xml
+#  type-aliases-package: com.xss.test.mapper
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
