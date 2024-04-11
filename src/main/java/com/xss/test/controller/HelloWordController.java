@@ -48,4 +48,11 @@ public class HelloWordController {
         System.out.println("testJenkins");
         return "testJenkins";
     }
+
+
+    public static void main(String[] args) {
+
+
+    }
+
 }
